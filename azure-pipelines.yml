@@ -59,8 +59,7 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool:
-      vmImage: $(vmImageName)
+    pool: myAgentPool    
     environment: $(environmentName)
     strategy:
       runOnce:
@@ -73,7 +72,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : cicd-nanodegree-haneen'
+            displayName: 'Deploy Azure Web App : cicd-nanodegree-dennis'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
