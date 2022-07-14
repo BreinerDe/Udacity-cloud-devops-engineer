@@ -39,3 +39,19 @@ source ~/.myrepo/bin/activate
 Change into the new directory:
 ```
 cd Udacity-cloud-devops-engineer
+```
+Install dependencies in the virtual environment and run tests:
+```
+make all
+```
+
+![pass test cloudshell.png](https://raw.githubusercontent.com/BreinerDe/Udacity-cloud-devops-engineer/main/screenshots/pass%20test%20cloudshell.png)
+
+### Running GitHub Actions
+
+Every push to the repository will trigger a GitHub Action which runs a pipeline to test the code.
+
+![passing github action.png](https://raw.githubusercontent.com/BreinerDe/Udacity-cloud-devops-engineer/main/screenshots/passing%20github%20action.png)
+
+
+
