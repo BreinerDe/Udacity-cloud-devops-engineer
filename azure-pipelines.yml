@@ -33,7 +33,7 @@ stages:
     pool: myAgentPool
     steps:  
     - script: |
-        python -m venv breinde
+        python3.7 -m venv breinde
         source breinde/bin/activate
         make install
       workingDirectory: $(projectRoot)
