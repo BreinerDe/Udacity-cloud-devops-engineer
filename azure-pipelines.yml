@@ -31,11 +31,7 @@ stages:
   jobs:
   - job: BuildJob
     pool: myAgentPool
-    steps:
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '$(pythonVersion)'
-      displayName: 'Use Python $(pythonVersion)'    
+    steps:  
     - script: |
         python -m venv breinde
         source breinde/bin/activate
