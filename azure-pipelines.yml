@@ -8,10 +8,10 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '75027800-331f-43f3-846b-0defcba888b4'
+  azureServiceConnectionId: '4b56a80c-d887-45e9-944b-96ffe8138f15'
   
   # Web app name
-  webAppName: 'cicd-nanodegree-haneen'
+  webAppName: 'cicd-nanodegree-dennis'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
