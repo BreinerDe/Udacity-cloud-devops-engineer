@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '4b56a80c-d887-45e9-944b-96ffe8138f15'
+  azureServiceConnectionId: 'fce1f72f-cf87-4dbd-8d5b-5331575a4a32'
   
   # Web app name
   webAppName: 'cicd-nanodegree-dennis'
