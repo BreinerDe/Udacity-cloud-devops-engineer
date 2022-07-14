@@ -6,6 +6,8 @@
 trigger:
 - main
 
+pool: myAgentPool
+
 variables:
   # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: 'fce1f72f-cf87-4dbd-8d5b-5331575a4a32'
@@ -13,8 +15,6 @@ variables:
   # Web app name
   webAppName: 'cicd-nanodegree-dennis'
 
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
 
   # Environment name
   environmentName: 'cicd-nanodegree-dennis'
@@ -30,14 +30,12 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool:
-      vmImage: $(vmImageName)
+    pool: myAgentPool
     steps:
     - task: UsePythonVersion@0
       inputs:
         versionSpec: '$(pythonVersion)'
-      displayName: 'Use Python $(pythonVersion)'
-    
+      displayName: 'Use Python $(pythonVersion)'    
     - script: |
         python -m venv breinde
         source breinde/bin/activate
