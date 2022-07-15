@@ -25,4 +25,4 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://cicdnanodegreedennis.azurewebsites.net:$PORT/predict
+     -X POST https://cicd-nanodegree-dennis.azurewebsites.net:$PORT/predict
