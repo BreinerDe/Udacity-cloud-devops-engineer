@@ -7,8 +7,7 @@ install:
 		pip uninstall jenja2
 
 test:
-	#python -m pytest -vv --cov=myrepolib tests/*.py
-	#python -m pytest --nbval notebook.ipynb
+	pytest test_hello.py
 
 
 lint:
