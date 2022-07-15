@@ -7,7 +7,7 @@ install:
 		pip uninstall jenja2
 
 test:
-	pytest test_hello.py
+	python3 -m pytest -vv test_hello.py
 
 
 lint:
