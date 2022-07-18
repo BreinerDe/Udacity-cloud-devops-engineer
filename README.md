@@ -114,7 +114,33 @@ https://cicd-nanodegree-dennis.scm.azurewebsites.net/api/logs/docker
 Add Application insights to improve logging and Analysis
 
 
+## Load testing
+
+Use locust to load test our App
+
+Install locust:
+```
+pip install locust
+```
+Ensure the app is running:
+```
+python app.py
+```
+
+Start locust:
+```
+locust
+```
+Open a browser and go to [http://localhost:8089](http://localhost:8089). Enter the total number of users to simulate, spawn rate, set the host to your app-service, and click Start Swarming:
+
+![locust settings](https://raw.githubusercontent.com/BreinerDe/Udacity-cloud-devops-engineer/main/screenshots/locust%20settings.png)
+
+Result of the load test:
+
+![locust-test](https://raw.githubusercontent.com/BreinerDe/Udacity-cloud-devops-engineer/main/screenshots/locust%20test.png)
+
+
 
 ## Demo Video
 
-https://streamable.com/ncnkm9
+https://www.youtube.com/watch?v=gHePPEsdSc8
