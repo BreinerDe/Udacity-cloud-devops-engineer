@@ -23,9 +23,6 @@ A [spreadsheet](Udacity-project-2-spreadsheet.xlsx) has been created to plan the
 
 ## Instructions
 
-Here is an architectural diagram:
-xx
-
 ## Deploy the app in Azure Cloud Shell
 
 In Azure Cloud Shell, clone the repo:
